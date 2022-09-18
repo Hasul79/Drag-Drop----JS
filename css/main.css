@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sofia", cursive;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px 0;
+  background: url(../Tatev.jpg) center/cover no-repeat;
+}
+.app .boards {
+  display: flex;
+  width: 100%;
+}
+.app .boards__item {
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+  max-width: 250px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 15px;
+  padding: 10px;
+  transition: 0.3 all ease;
+  border-radius: 3px;
+}
+.app .boards__item .title {
+  padding: 5px;
+  color: white;
+}
+.app .boards__item .title:focus {
+  outline: 1px solid rgba(168, 168, 168, 0.45);
+}
+.app .boards__item .list {
+  min-height: 40px;
+}
+.app .boards__item .list__item {
+  background-color: #fefefe;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  margin: 4px 0;
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+  border: none;
+}
+.app .boards__item .form {
+  border-radius: 3px;
+  display: none;
+  margin-top: auto;
+}
+.app .boards__item .form .textarea {
+  resize: none;
+  height: 60px;
+  border-radius: 3px;
+  border: none;
+  background: white;
+  padding: 10px;
+  width: 100%;
+}
+.app .boards__item .form .textarea:focus {
+  outline: none;
+}
+.app .boards__item .form .buttons {
+  display: flex;
+}
+.app .boards__item .form .buttons .add__item-btn {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgb(13, 136, 218);
+  bottom: none;
+  height: 35px;
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.app .boards__item .form .buttons .cancel__item-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  margin-left: auto;
+  flex-shrink: 0;
+  padding: 0 10px;
+  background: rgb(160, 17, 12);
+  border: none;
+  height: 35px;
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+}
+.app .boards__item .add__btn {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  background: rgba(155, 155, 155, 0.3);
+  border-radius: 3px;
+  margin-top: 5px;
+  font-size: 12px;
+  padding-left: 10px;
+  color: white;
+  cursor: pointer;
+}
+.app .boards__item .add__btn span {
+  font-size: 20px;
+  margin-right: 10px;
+  color: white;
+}
+.app .button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(8, 77, 122, 0.8);
+  border: none;
+  width: 250px;
+  height: 40px;
+  cursor: pointer;
+  transform: translate(-50%);
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 3px 3px 25px black, 0 0 50px black;
+}/*# sourceMappingURL=main.css.map */
